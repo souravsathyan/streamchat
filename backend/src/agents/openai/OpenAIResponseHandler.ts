@@ -2,7 +2,7 @@ import OpenAI from "openai";
 import type { AssistantStream } from "openai/lib/AssistantStream";
 import type { Channel, Event, MessageResponse, StreamChat } from "stream-chat";
 
-export class OpenAiResponseHandler {
+export class OpenAIResponseHandler {
   private message_text = ""; //accumlates complete ai response
   private chunk_counter = 0; // track no.of chunks recieved for monitoring and debugging
   private run_id = ""; // unique openai run id for operation
